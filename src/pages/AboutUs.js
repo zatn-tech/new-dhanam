@@ -97,10 +97,11 @@ const AboutUs = () => {
         <div className='md:w-[60%]'>
           <div className='text-justify '>
             <Fade direction='left'>
-              <b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Biology, Maths, Physics, Chemistry</b>
-              <b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Computer Science, Maths, Physics, Chemistry</b>
-              <b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Botany, Zoology, Physics, Chemistry.</b>
-              <b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Accountancy, Commerce, Economics, Computer Application</b>
+              <div className="my-10 md:my-5"><b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Biology, Maths, Physics, Chemistry</b></div>
+              <div className="my-10 md:my-5"><b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Computer Science, Maths, Physics, Chemistry</b></div>
+              <div className="my-10 md:my-5"><b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Botany, Zoology, Physics, Chemistry.</b></div>
+              <div className="my-10 md:my-5"><b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Accountancy, Commerce, Economics, Computer Application</b></div>
+              <div className="my-10 md:my-5"><b className='text-xl md:text-3xl md:w-[20%] my-10 md:my-0 text-white drop-shadow-[2px_2px_black] italic'>Accountancy, Commerce, Economics, Business Mathematics and statistics</b></div>
 
             </Fade>
           </div>
@@ -135,54 +136,16 @@ const AboutUs = () => {
       <div className='my-16'>
         <div><Heading name={"MEET OUR CORRESPONDENT"} /></div>
         <div className='md:flex mx-5 md:mx-32 mt-16 justify-between'>
-
-          <div className='md:w-[70%] my-auto text-justify'>
-            <Slide>
-              <div className="my-3">
-            திரு. ப. கிருஷ்ணன் அவர்கள் 1964 ஆம் ஆண்டு சோளிங்கரில் திரு. பச்சையப்பன் மற்றும் திருமதி. தனம்மாள் ஆகியோருக்கு 8 ஆவது மகனாகப் பிறந்தார். 
-              </div>
-<div className="my-3">
-மிகவும் வறுமையான குடும்பத்தில் பிறந்த இவர், தன் சூழ்நிலையை நன்கறிந்து, "கொடிது கொடிது வறுமை கொடிது அதனினும் கொடிது இளமையில் வறுமை" எனும் ஔவையாரின் வரிகளுக்கேற்ப வறுமையின் பிடியிலேயே வளர்ந்து உலகம் அறிந்து கல்வி கற்றார். 
-</div>
-<div className="my-3">
-
-தன் தாய் மற்றும் தந்தை பட்ட துயரத்தை கண்டு மனம் உடைந்து வளர்ந்த இவர், ஒரு வைராக்கியத்தை மனதில் கொண்டார். 
-அதாவது இவ்வளவு வறுமையிலும் தன் தேவைகளை பூர்த்தி செய்யும் தாயையும் தந்தையையும் பெருமைப்படுத்துவது என்பதே..
-</div>
-<div className="my-3">
-
-இவரும் இவரது அண்ணன் திரு. ப. நரசிம்மன் அவர்களும் சேர்ந்து 
-1978 ஆம் ஆண்டு தனம் வணிகவியல் பயிலகத்தை துவங்கினர்.
-1985 ஆம் ஆண்டு தனம் வணிகவியல்  பயிலகத்தை வழிநடத்தி செல்ல முழு பொறுப்பேற்றார். 
-இவர் இப்பயிலகத்தை பொறுப்பேற்கும் சமயம், பல ஏளனப் பேச்சுக்கு ஆளானார். 
-அனைத்தையும் உடைக்கும் விதமாக தட்டச்சில் மாநிலத்தில் முதல் இடத்தை இவர் மாணவி திருமதி. கலா அவர்கள் வெற்றி பெற்றார்.
-</div>
-<div className="my-3">
-
-கல்விப் பணியில் தன்னை மேலும் சிறப்பிக்கும் விதமாக, 2002 ஆம் ஆண்டு தனம் நர்சரி மற்றும் பிரைமரி பள்ளியை நிறுவினார். 
-சுமார் 23 ஆண்டுகளாக இவர் துவங்கிய பள்ளி வெற்றிகரமாக இயங்கிக் கொண்டிருக்கிறது. 
-</div>
-<div className="my-3">
-
-பின்னர் 2007 ஆம் ஆண்டு அடுத்த கட்டமாக, "தனம் பச்சையப்பன் மெட்ரிக் மேல்நிலைப் பள்ளியை" துவங்கினார். இப்பள்ளிக்கு தன் தாய் பெயரான "தனம்" மற்றும் தந்தை பெயரான "பச்சையப்பன்" என பள்ளிக்கு பெயர் சூட்டினார். 
-2010 ஆம் ஆண்டு MATRIC SYLLABUS-ல் 10 ஆம் வகுப்பு பொதுத்தேர்வில் அரக்கோணத்தில் 461/500 பெற்றது பெருமைக்குரியது.
-</div>
-<div className="my-3">
-
-பள்ளி துவங்கப்பட்டு இதுவரை தொடர்ந்து 100% தேர்ச்சி பெற்றுள்ளது. கடந்த 4 ஆண்டுகளாக 12 ஆம் வகுப்பில் அரசு பொதுத்தேர்வில் மாநில அளவில் 2 ஆம் இடமும் மாவட்ட அளவில் முதல் இடமும், வரலாற்று சாதனையாக தமிழ் பாடத்தில் 100/100 பெற்று பெருமை சேர்த்துக் கொண்டிருப்பது, இவர் லட்சியப் பணியில் சேரும்.
-</div>
-            </Slide>
-          </div>
-          <div className="my-auto">
+          <div className="my-auto mx-16 md:mx-auto">
             <Slide direction='down'>
 
-              <div className='flex justify-center items-center'>
-                <img className=' w-72 h-96 ' src={correspondent} alt="Correspondent" />
+              <div className=''>
+                <img className='w-72 h-96 ' src={correspondent} alt="Correspondent" />
               </div>
             </Slide>
             <Slide direction='up'>
 
-              <div className="bg-primary text-white py-2 px-4 relative skew-x-12">
+              <div className="bg-primary text-white w-fit md:w-full py-2 px-4 relative skew-x-12">
               Mr. P. Krishnan M.A.
               </div>
             </Slide>

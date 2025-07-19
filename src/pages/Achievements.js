@@ -32,7 +32,7 @@ const Achievements = () => {
     if (res.ok) {
       const achievementArr = await res.json()
       setAchievements(achievementArr)
-      console.log(achievementArr)
+      // console.log(achievementArr)
     } else {
       alert('Failed to load achievements. Kindly contact support')
     }
@@ -143,7 +143,7 @@ Total: 595/600
         </div>
         <div data-aos="zoom-out" className='grid md:grid-cols-3 gap-10 my-16'>
         {achievements.slice(Math.ceil(achievements.length / 2)).map((achievement, index) => (
-  <AchievementBox topic={achievement.topic} content={achievement.description} image={achievement.file} />
+  <AchievementBox topic={achievement.topic} marks={achievement.marks} content={achievement.description} image={achievement.file} />
 ))}
 
         </div>
