@@ -19,7 +19,7 @@ const Slider = ({ images,title,menuBackgroundImage, interval }) => {
       
 
       // Log the current scroll position for debugging
-      console.log(currentScrollY);
+      // console.log(currentScrollY);
 
       // Define a buffer range (e.g., between 490 and 510)
       if (currentScrollY > 500) {

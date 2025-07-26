@@ -6,7 +6,7 @@ import { facilitiesHome } from '../components/facilitiesHome'
 import SliderComponent from '../components/SliderComponent'
 import { Link } from 'react-router-dom'
 import Enquiry from '../components/Enquiry'
-import about from '../assets/images/branch1.jpg'
+import about from '../assets/images/about_school.jpg'
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";

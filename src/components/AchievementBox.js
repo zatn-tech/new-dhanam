@@ -16,7 +16,7 @@ const AchievementBox = ({ image, topic, content, marks }) => {
 
   // Function to calculate full marks (100 * number of subjects)
   const calculateFullMarks = (marks) => {
-    console.log(marks)
+    // console.log(marks)
     const totalSubjects = marks.mark.length
     return totalSubjects * 100; // Full marks = 100 * number of subjects
   };
