@@ -91,7 +91,7 @@ const SliderComponent = ({ slides = [] }) => {
                 <div className="order-1 lg:order-2 flex justify-center">
                   <div className="relative rounded-2xl overflow-hidden shadow-large w-full max-w-md">
                     <img
-                      src={`https://api.dhanamschool.com/files/${slide.file}`}
+                      src={`https://dhanamschool.com/files/${slide.file}`}
                       alt={slide.topic || 'Achievement'}
                       className="w-full h-72 md:h-80 object-cover"
                       loading="lazy"

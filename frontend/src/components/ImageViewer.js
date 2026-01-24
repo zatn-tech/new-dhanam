@@ -92,7 +92,7 @@ const ImageViewer = ({ imageArr }) => {
                 <img
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   alt={i.alt}
-                  src={`https://api.dhanamschool.com/files/` + i.file}
+                  src={`https://dhanamschool.com/files/` + i.file}
                 />
               ) : (
                 <img
@@ -125,7 +125,7 @@ const ImageViewer = ({ imageArr }) => {
           <div className="relative w-full h-full flex items-center justify-center p-4">
             {imageArr[currentIndex]._id!=null&&
             <img
-            src={`https://api.dhanamschool.com/files/` + imageArr[currentIndex]?.file}
+            src={`https://dhanamschool.com/files/` + imageArr[currentIndex]?.file}
             alt={imageArr[currentIndex]?.alt}
             className="max-w-full max-h-full object-contain transition-transform duration-300 ease-out scale-100"
             />

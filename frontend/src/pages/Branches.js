@@ -44,7 +44,7 @@ const Branches = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
-                  Our <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Branches</span>
+                  Our <span className="gradient-text">Branches</span>
                 </h1>
               </div>
               
@@ -129,9 +129,9 @@ const Branches = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Growing Network of <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Excellence</span>
+                Growing Network of <span className="gradient-text">Excellence</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-3xl mx-auto">
                 From our humble beginnings, DPMHSS has expanded to multiple locations, each maintaining the same high standards of education and care. Our branches are strategically located to serve communities and provide accessible quality education.
               </p>
@@ -146,9 +146,9 @@ const Branches = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Our Branch <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Network</span>
+                Our Branch <span className="gradient-text">Network</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Each branch maintains our commitment to quality education and holistic development
               </p>
@@ -165,9 +165,9 @@ const Branches = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Why Multiple <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Branches?</span>
+                Why Multiple <span className="gradient-text">Branches?</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Discover the benefits of our expanding network and commitment to accessibility
               </p>
@@ -228,7 +228,7 @@ const Branches = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-secondary to-accent">
+      <section className="section-padding bg-gradient-to-r from-secondary to-primary">
         <div className="container-padding text-center">
           <div data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">

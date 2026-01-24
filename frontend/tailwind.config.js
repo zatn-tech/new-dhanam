@@ -5,12 +5,23 @@ module.exports = withMT({
   theme: {
     colors:{
       'primary':'#06402b', // Dark green from logo outer ring
-      'secondary':'#ffb116', // Yellow/orange from logo inner circle
-      'accent':'#ed631e', // Orange-brown from address text
+      'secondary':'#ffb116', // Yellow from logo inner circle
+      'accent':'#90EE90', // Light green from logo inner ring (replacing orange)
       'light-green':'#90EE90', // Light green from logo inner ring
       'white': '#ffffff',
       'black':'#000000',
-      // Remove gray scale and other colors that don't represent the school
+      'gray': {
+        50: '#f9fafb',
+        100: '#f3f4f6',
+        200: '#e5e7eb',
+        300: '#d1d5db',
+        400: '#9ca3af',
+        500: '#6b7280',
+        600: '#4b5563',
+        700: '#374151',
+        800: '#1f2937',
+        900: '#111827',
+      },
     },
     extend: {
       animation: {

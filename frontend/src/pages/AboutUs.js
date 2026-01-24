@@ -57,7 +57,7 @@ const AboutUs = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
-                  About <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Us</span>
+                  About <span className="gradient-text">Us</span>
                 </h1>
               </div>
               
@@ -142,9 +142,9 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Why Choose <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">DPMHSS?</span>
+                Why Choose <span className="gradient-text">DPMHSS?</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Discover what makes us the preferred choice for quality education and holistic development
               </p>
@@ -185,7 +185,7 @@ const AboutUs = () => {
               </div>
 
               {/* DPMHSS Acronym */}
-              <div className="card p-6 lg:p-8 bg-gradient-to-br from-secondary/10 to-accent/10 shadow-large hover:shadow-2xl transition-all duration-500">
+              <div className="card p-6 lg:p-8 bg-gradient-to-br from-secondary/10 to-primary/10 shadow-large hover:shadow-2xl transition-all duration-500">
                 <h3 className="text-xl lg:text-2xl font-display font-bold text-primary mb-6 text-center">DPMHSS</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {['D', 'P', 'M', 'H', 'S', 'S'].map((letter, index) => (
@@ -200,7 +200,7 @@ const AboutUs = () => {
               </div>
 
               {/* Quote */}
-              <div className="card p-6 bg-gradient-to-r from-secondary/20 to-accent/20 border-l-4 border-secondary shadow-large">
+              <div className="card p-6 bg-gradient-to-r from-secondary/20 to-primary/20 border-l-4 border-secondary shadow-large">
                 <div className="flex items-start space-x-4">
                   <img className="w-8 h-10 mt-1 flex-shrink-0" src={quote} alt="Quote" />
                   <p className="text-primary/90 italic leading-relaxed text-lg">
@@ -219,9 +219,9 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Our <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Features</span>
+                Our <span className="gradient-text">Features</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Discover what makes our educational approach unique and effective
               </p>
@@ -251,9 +251,9 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                Academic <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Groups</span>
+                Academic <span className="gradient-text">Groups</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
                 We offer diverse academic streams to cater to different interests and career aspirations
               </p>
@@ -284,7 +284,7 @@ const AboutUs = () => {
             <div className="text-center">
               <div data-aos="fade-up">
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-8">
-                  Our Learning <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Approach</span>
+                  Our Learning <span className="gradient-text">Approach</span>
                 </h3>
                 <div className="flex justify-center space-x-12 mb-12">
                   <Fade>
@@ -353,9 +353,9 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Meet Our <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Correspondent</span>
+                Meet Our <span className="gradient-text">Correspondent</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Leadership that drives excellence and innovation in education
               </p>
@@ -373,7 +373,7 @@ const AboutUs = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-secondary to-accent text-white px-8 py-4 rounded-2xl shadow-large">
+                <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-secondary to-primary text-white px-8 py-4 rounded-2xl shadow-large">
                   <p className="font-display font-semibold text-lg">Mr. P. Krishnan M.A.</p>
                 </div>
               </div>
@@ -384,7 +384,7 @@ const AboutUs = () => {
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-primary">
                   Visionary Leadership
                 </h3>
-                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary rounded-full"></div>
                 <p className="text-lg text-primary/80 leading-relaxed">
                   Under the guidance of Mr. P. Krishnan M.A., our correspondent, DPMHSS has grown into a premier educational institution. His vision for excellence in education and commitment to student development has shaped our school's success over the years.
                 </p>
@@ -403,9 +403,9 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Take the Next <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Step</span>
+                Take the Next <span className="gradient-text">Step</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Ready to join our community of learners and achievers?
               </p>
@@ -421,7 +421,7 @@ const AboutUs = () => {
               <p className="text-primary/70 text-lg">Discover more about our educational approach and programs</p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay={200} className="card group hover:shadow-2xl transition-all duration-500 text-center p-8 bg-gradient-to-r from-secondary to-accent text-white hover:scale-105">
+            <div data-aos="fade-up" data-aos-delay={200} className="card group hover:shadow-2xl transition-all duration-500 text-center p-8 bg-gradient-to-r from-secondary to-primary text-white hover:scale-105">
               <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Bounce><img className='mx-auto w-20 h-20' src={visit} alt="Visit" /></Bounce>
               </div>

@@ -7,7 +7,7 @@ const Enquiry = () => {
 
   const increaseInterest = async () => {
     try {
-      const res = await fetch('https://api.dhanamschool.com/interested/', {
+      const res = await fetch('https://dhanamschool.com/api/interested/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -41,7 +41,7 @@ const Enquiry = () => {
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 group hidden md:block">
         <button
           onClick={increaseInterest}
-          className="bg-gradient-to-r from-secondary to-accent text-primary px-6 py-4 rounded-l-2xl shadow-large hover:shadow-xl transition-all duration-300 transform translate-x-16 group-hover:translate-x-0 flex items-center space-x-3"
+          className="bg-gradient-to-r from-secondary to-primary text-white px-6 py-4 rounded-l-2xl shadow-large hover:shadow-xl transition-all duration-300 transform translate-x-16 group-hover:translate-x-0 flex items-center space-x-3"
         >
           <div className="flex items-center space-x-3">
             <span className="text-2xl">👍</span>
@@ -57,7 +57,7 @@ const Enquiry = () => {
       <div className="fixed bottom-20 right-4 z-50 md:hidden">
         <button
           onClick={increaseInterest}
-          className="bg-gradient-to-r from-secondary to-accent text-primary p-4 rounded-full shadow-large hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+          className="bg-gradient-to-r from-secondary to-primary text-white p-4 rounded-full shadow-large hover:shadow-xl transition-all duration-300 flex items-center justify-center"
         >
           <span className="text-2xl">👍</span>
         </button>

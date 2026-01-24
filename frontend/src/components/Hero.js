@@ -1,6 +1,6 @@
 import React from 'react'
-import display1 from '../assets/images/display1.jpg'
-import display3 from '../assets/images/display3.jpg'
+import display1 from '../assets/images/display1.jpeg'
+import display3 from '../assets/images/display2.jpeg'
 import display7 from '../assets/images/display7.jpg'
 import display10 from '../assets/images/display10.jpeg'
 import display11 from '../assets/images/display11.jpeg'
@@ -52,7 +52,7 @@ const Hero = () => {
                     MATRICULATION HIGHER SECONDARY SCHOOL
                   </h2>
                   <div className="hidden sm:flex items-center space-x-2">
-                    <div className="w-1 h-1 bg-accent rounded-full flex-shrink-0"></div>
+                    <div className="w-1 h-1 bg-secondary rounded-full flex-shrink-0"></div>
                     <p className="text-xs md:text-sm lg:text-base font-display text-white/90">
                       ASHOK NAGAR, ARAKKONAM - 631 001
                     </p>
@@ -87,7 +87,7 @@ const Hero = () => {
                   </div>
                   
                   {/* Decorative Elements */}
-                  <div className="absolute -top-2 -left-2 w-3 h-3 bg-accent rounded-full opacity-60"></div>
+                  <div className="absolute -top-2 -left-2 w-3 h-3 bg-primary rounded-full opacity-60"></div>
                   <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-primary rounded-full opacity-60"></div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const Hero = () => {
         </div>
         
         {/* Bottom Border with Gradient */}
-        <div className="h-1 bg-gradient-to-r from-secondary via-accent to-secondary"></div>
+        <div className="h-1 bg-gradient-to-r from-secondary via-primary to-secondary"></div>
       </div>
 
       {/* Hero Slider */}

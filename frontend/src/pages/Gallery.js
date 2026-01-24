@@ -29,7 +29,7 @@ const Gallery = () => {
         const parsed = JSON.parse(cachedData);
         setGalleryItems(parsed);
       } else {
-        const res = await fetch('https://api.dhanamschool.com/gallery/', {
+        const res = await fetch('https://dhanamschool.com/api/gallery/', {
           method: 'GET',
           headers: {
             'Content-type': 'application/json',
@@ -176,7 +176,7 @@ const Gallery = () => {
             <MdDoubleArrow size={22} />
           </button>
           <img
-            src={`https://api.dhanamschool.com/files/${imageGalleryItems[currentIndex]?.file}`}
+            src={`https://dhanamschool.com/files/${imageGalleryItems[currentIndex]?.file}`}
             alt={imageGalleryItems[currentIndex]?.title}
             className="w-screen h-screen object-contain"
           />

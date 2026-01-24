@@ -131,7 +131,7 @@ const Career = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
-                  Join Our <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Team</span>
+                  Join Our <span className="gradient-text">Team</span>
                 </h1>
               </div>
               
@@ -216,9 +216,9 @@ const Career = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Why Work <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">With Us?</span>
+                Why Work <span className="gradient-text">With Us?</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-3xl mx-auto">
                 Join a team of dedicated educators committed to excellence in education and student development. We offer a supportive environment where your passion for teaching can flourish.
               </p>
@@ -233,9 +233,9 @@ const Career = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Employee <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Benefits</span>
+                Employee <span className="gradient-text">Benefits</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 We value our employees and offer comprehensive benefits to support their professional and personal growth
               </p>
@@ -262,9 +262,9 @@ const Career = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Current <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Openings</span>
+                Current <span className="gradient-text">Openings</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Explore our current job opportunities and find the perfect role for your skills and passion
               </p>
@@ -297,7 +297,7 @@ const Career = () => {
                         </span>
                       </div>
                     </div>
-                    <button className="btn-secondary bg-gradient-to-r from-secondary to-accent text-white hover:from-accent hover:to-secondary">
+                    <button className="btn-secondary bg-gradient-to-r from-secondary to-primary text-white hover:from-primary hover:to-secondary">
                       Apply Now
                     </button>
                   </div>
@@ -328,9 +328,9 @@ const Career = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Application <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Process</span>
+                Application <span className="gradient-text">Process</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Simple and straightforward steps to join our team
               </p>
@@ -340,7 +340,7 @@ const Career = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div data-aos="fade-up" data-aos-delay={100} className="text-center group">
               <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
                   1
                 </div>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-secondary rounded-full"></div>
@@ -351,7 +351,7 @@ const Career = () => {
 
             <div data-aos="fade-up" data-aos-delay={200} className="text-center group">
               <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
                   2
                 </div>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-secondary rounded-full"></div>
@@ -362,7 +362,7 @@ const Career = () => {
 
             <div data-aos="fade-up" data-aos-delay={300} className="text-center group">
               <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
                   3
                 </div>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-secondary rounded-full"></div>
@@ -373,7 +373,7 @@ const Career = () => {
 
             <div data-aos="fade-up" data-aos-delay={400} className="text-center group">
               <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto group-hover:scale-110 transition-transform duration-300">
                   4
                 </div>
               </div>
@@ -385,7 +385,7 @@ const Career = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-secondary to-accent">
+      <section className="section-padding bg-gradient-to-r from-secondary to-primary">
         <div className="container-padding text-center">
           <div data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">

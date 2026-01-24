@@ -11,7 +11,7 @@ const Heading = ({ name, subtitle, centered = true }) => {
           {subtitle}
         </p>
       )}
-      <div className="w-20 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mt-6"></div>
+      <div className="w-20 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mt-6"></div>
     </div>
   )
 }

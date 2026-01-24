@@ -32,7 +32,7 @@ const TermsOfService = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
-                  Terms of <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Service</span>
+                  Terms of <span className="gradient-text">Service</span>
                 </h1>
               </div>
               

@@ -87,7 +87,7 @@ const Home = () => {
 
     const getItemsForHome = async () => {
       try {
-        const res = await fetch("https://api.dhanamschool.com/home/", {
+        const res = await fetch("https://dhanamschool.com/api/home/", {
           method: 'GET',
           headers: {
             'Content-type': 'application/json',
@@ -116,18 +116,25 @@ const Home = () => {
         <Hero />
 
         {/* Announcement Bar */}
-        <div className="bg-gradient-to-r from-secondary to-accent text-white py-3">
+        <div className="bg-gradient-to-r from-primary via-primary/95 to-primary text-white py-3 overflow-hidden">
           <div className="container-padding">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                <div className="animate-pulse bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm font-medium text-center">
-                  🎓 ADMISSIONS OPEN 2025-2026
+              <div className="flex-1 flex items-center space-x-4 overflow-hidden">
+                <div className="animate-pulse bg-secondary/30 px-3 py-1 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap flex-shrink-0">
+                  🎓 ADMISSIONS OPEN 2026-2027
                 </div>
-                <div className="hidden lg:block text-xs sm:text-sm text-center">
-                  District First Rank 12th (2021-2022) - 589/600 • State Second Rank 12th (2022-2023) - 595/600
+                <div className="overflow-hidden flex-1">
+                  <div className="flex animate-scroll">
+                    <span className="whitespace-nowrap text-xs sm:text-sm pr-8">
+                      District First Rank 12th (2021-2022) - 589/600 • State Second Rank 12th (2022-2023) - 595/600 • Excellence in Education • Holistic Development • State-of-the-Art Facilities
+                    </span>
+                    <span className="whitespace-nowrap text-xs sm:text-sm pr-8">
+                      District First Rank 12th (2021-2022) - 589/600 • State Second Rank 12th (2022-2023) - 595/600 • Excellence in Education • Holistic Development • State-of-the-Art Facilities
+                    </span>
+                  </div>
                 </div>
               </div>
-              <Link to="/contact" className="btn-outline text-white border-white hover:bg-white hover:text-secondary text-sm">
+              <Link to="/contact" className="btn-outline text-white border-white hover:bg-white hover:text-primary text-sm whitespace-nowrap flex-shrink-0">
                 Apply Now
               </Link>
             </div>
@@ -191,7 +198,7 @@ const Home = () => {
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 tilt-hover">
                 Our <span className="gradient-text">Core Values</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 The principles that define who we are and how we shape every learner’s journey
               </p>
@@ -209,7 +216,7 @@ const Home = () => {
                     backgroundImage: `url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.2'%3E%3Ccircle cx='45' cy='45' r='2'/%3E%3Ccircle cx='15' cy='15' r='1.5'/%3E%3Ccircle cx='75' cy='75' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`
                   }}></div>
                   <div className="relative flex items-center gap-4 mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary to-accent text-white flex items-center justify-center text-2xl pixel-shadow">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary to-primary text-white flex items-center justify-center text-2xl pixel-shadow">
                       {v.icon}
                     </div>
                     <h3 className="text-xl font-display font-semibold text-primary">{v.topic}</h3>
@@ -222,7 +229,7 @@ const Home = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="relative mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
+                  <div className="relative mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-primary rounded-full"></div>
                 </div>
               ))}
             </div>
@@ -236,7 +243,7 @@ const Home = () => {
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 tilt-hover">
                 Student <span className="gradient-text">Achievements</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Celebrating the success and accomplishments of our outstanding students
               </p>
@@ -255,7 +262,7 @@ const Home = () => {
         </section>
 
         {/* Facilities Section */}
-        <section ref={sectionRef} id="section3" className="section-padding bg-gradient-to-br from-secondary/5 to-accent/5">
+        <section ref={sectionRef} id="section3" className="section-padding bg-gradient-to-br from-secondary/5 to-primary/5">
           <div className="container-padding">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -322,20 +329,53 @@ const Home = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-gradient-to-r from-secondary to-accent">
-          <div className="container-padding text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              Ready to Join Our Community?
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Give your child the best start in life with quality education and holistic development
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-secondary bg-white text-secondary hover:bg-gray-100">
-                Apply Now
+        <section className="section-padding bg-gradient-to-r from-secondary to-primary relative overflow-hidden">
+          {/* Animated background pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3Ccircle cx='80' cy='80' r='2'/%3E%3Ccircle cx='20' cy='80' r='2'/%3E%3Ccircle cx='80' cy='20' r='2'/%3E%3C/g%3E%3C/svg%3E")`
+            }}></div>
+          </div>
+          
+          <div className="container-padding text-center relative z-10">
+            {/* Main CTA Text with Interactive Effects */}
+            <div className="group mb-10">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-8 transform transition-all duration-500 group-hover:scale-105">
+                <span className="inline-block relative">
+                  <span className="relative z-10">Join Us Today and Feel the difference Tomorrow!!</span>
+                  {/* Glow effect */}
+                  <span className="absolute inset-0 text-white blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500">Join Us Today and Feel the difference Tomorrow!!</span>
+                </span>
+                <span className="inline-block ml-3 text-3xl md:text-4xl lg:text-5xl animate-bounce group-hover:animate-spin transition-transform duration-500">🌟</span>
+              </h2>
+              
+              {/* Decorative elements */}
+              <div className="flex items-center justify-center gap-4 mb-8">
+                <div className="w-12 h-1 bg-white/50 rounded-full group-hover:bg-white transition-colors duration-500"></div>
+                <div className="w-3 h-3 bg-white rounded-full animate-pulse group-hover:scale-125 transition-transform duration-500"></div>
+                <div className="w-12 h-1 bg-white/50 rounded-full group-hover:bg-white transition-colors duration-500"></div>
+              </div>
+            </div>
+
+            {/* Interactive Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link 
+                to="/contact" 
+                className="bg-white text-secondary hover:bg-gray-100 transform transition-all duration-300 hover:scale-110 hover:shadow-2xl px-8 py-4 text-lg font-semibold rounded-lg relative overflow-hidden group"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Apply Now
+                  <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </span>
               </Link>
-              <Link to="/about" className="btn-outline border-white text-white hover:bg-white hover:text-secondary">
-                Learn More
+              <Link 
+                to="/about" 
+                className="border-2 border-white text-white hover:bg-white hover:text-secondary transform transition-all duration-300 hover:scale-110 hover:shadow-2xl px-8 py-4 text-lg font-semibold rounded-lg relative overflow-hidden group"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Learn More
+                  <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </span>
               </Link>
             </div>
           </div>

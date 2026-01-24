@@ -27,7 +27,7 @@ const GalleryItem = ({ file, title, description, featured, onClick }) => {
       `}
     >
       <img 
-        src={`https://api.dhanamschool.com/files/`+file} 
+        src={`https://dhanamschool.com/files/`+file} 
         alt={title}
         className={`
           w-full h-full object-cover transition-transform duration-700 pointer-events-none

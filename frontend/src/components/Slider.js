@@ -59,13 +59,13 @@ const Slider = ({ images, interval = 3000 }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="h-full w-full object-contain md:object-cover"
+              className="w-full h-auto absolute top-1/2 left-0 -translate-y-1/2"
               style={{
-                objectPosition: 'center center'
+                maxHeight: '100%'
               }}
             />
             {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/30 pointer-events-none" />
           </div>
         ))}
       </div>

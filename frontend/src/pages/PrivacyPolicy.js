@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
-                  Privacy <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Policy</span>
+                  Privacy <span className="gradient-text">Policy</span>
                 </h1>
               </div>
               

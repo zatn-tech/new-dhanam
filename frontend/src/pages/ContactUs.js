@@ -41,7 +41,7 @@ const ContactUs = () => {
         message: formData.message
       };
       
-      const response = await fetch('https://api.dhanamschool.com/contact/', {
+      const response = await fetch('https://dhanamschool.com/api/contact/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ const ContactUs = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
-                  Get In <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Touch</span>
+                  Get In <span className="gradient-text">Touch</span>
                 </h1>
               </div>
               
@@ -208,9 +208,9 @@ const ContactUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Contact <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Information</span>
+                Contact <span className="gradient-text">Information</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-3xl mx-auto">
                 Multiple ways to reach us. Choose the method that works best for you.
               </p>
@@ -318,7 +318,7 @@ const ContactUs = () => {
                   
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-secondary to-accent text-white py-4 px-8 rounded-lg font-semibold hover:from-accent hover:to-secondary transition-all duration-300 transform hover:scale-105"
+                    className="w-full bg-gradient-to-r from-secondary to-primary text-white py-4 px-8 rounded-lg font-semibold hover:from-primary hover:to-secondary transition-all duration-300 transform hover:scale-105"
                   >
                     Send Message
                   </button>
@@ -331,12 +331,18 @@ const ContactUs = () => {
               {/* Map */}
               <div className="card p-8 bg-white shadow-large">
                 <h3 className="text-2xl font-display font-bold text-primary mb-6">Find Us</h3>
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl mb-2">🗺️</div>
-                    <p className="text-primary/70">Interactive Map Coming Soon</p>
-                    <p className="text-sm text-primary/50 mt-2">Dhanam Pachaiyappan Matriculation Higher Secondary School</p>
+                <div className="rounded-lg overflow-hidden">
+                  <div className="relative w-full h-64 md:h-80 lg:h-96">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1532208295785!2d79.65055097608239!3d13.089474187236844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52bdd44c42e867%3A0x12d9ac3663e7d218!2sDhanam%20Pachaiyappan%20Matriculation%20Higher%20Secondary%20School%20(DPMHSS)!5e0!3m2!1sen!2sin!4v1769279860383!5m2!1sen!2sin" 
+                      className="absolute inset-0 w-full h-full border-0"
+                      allowFullScreen="" 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Dhanam School Location"
+                    ></iframe>
                   </div>
+                  <p className="text-sm text-primary/50 mt-3 text-center">Dhanam Pachaiyappan Matriculation Higher Secondary School</p>
                 </div>
               </div>
 
@@ -363,9 +369,9 @@ const ContactUs = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Frequently Asked <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Questions</span>
+                Frequently Asked <span className="gradient-text">Questions</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Quick answers to common questions about our school
               </p>
@@ -397,7 +403,7 @@ const ContactUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-secondary to-accent">
+      <section className="section-padding bg-gradient-to-r from-secondary to-primary">
         <div className="container-padding text-center">
           <div data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">

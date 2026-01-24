@@ -34,7 +34,7 @@ const Achievements = () => {
     setIsLoading(true);
     try {
       // Primary endpoint (singular)
-      let res = await fetch("https://api.dhanamschool.com/achievement/", {
+      let res = await fetch("https://dhanamschool.com/api/achievement/", {
         method: 'GET',
         headers: { 'Content-type': 'application/json', "Access-Control-Allow-Origin": "*" },
       });
@@ -46,7 +46,7 @@ const Achievements = () => {
 
       // Fallback to plural endpoint if empty
       if ((!list || list.length === 0)) {
-        res = await fetch("https://api.dhanamschool.com/achievements/", {
+        res = await fetch("https://dhanamschool.com/api/achievement/", {
           method: 'GET',
           headers: { 'Content-type': 'application/json', "Access-Control-Allow-Origin": "*" },
         });
@@ -58,7 +58,7 @@ const Achievements = () => {
 
       // Fallback to /home for embedded achievements if still empty
       if ((!list || list.length === 0)) {
-        res = await fetch("https://api.dhanamschool.com/home/", {
+        res = await fetch("https://dhanamschool.com/api/home/", {
           method: 'GET',
           headers: { 'Content-type': 'application/json', "Access-Control-Allow-Origin": "*" },
         });
@@ -101,7 +101,7 @@ const Achievements = () => {
               {/* Main Title with Animation */}
               <div data-aos="fade-down" data-aos-delay={200}>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
-                  Student <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Achievements</span>
+                  Student <span className="gradient-text">Achievements</span>
                 </h1>
               </div>
               
@@ -150,9 +150,9 @@ const Achievements = () => {
           <div className="text-center mb-16">
             <div data-aos="fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-                Outstanding <span className="gradient-text bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Results</span>
+                Outstanding <span className="gradient-text">Results</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-primary/80 max-w-2xl mx-auto">
                 Explore the remarkable achievements of our students across different academic years
               </p>
@@ -176,7 +176,7 @@ const Achievements = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-secondary to-accent">
+      <section className="section-padding bg-gradient-to-r from-secondary to-primary">
         <div className="container-padding text-center">
           <div data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">

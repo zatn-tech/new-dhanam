@@ -26,7 +26,7 @@ const AchievementBox = ({ achievement, image, topic, content, marks }) => {
       <div className="relative overflow-hidden">
         <img
           className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-          src={finalImage ? `https://api.dhanamschool.com/files/${finalImage}` : 'https://via.placeholder.com/400x300/1a5f7a/ffffff?text=Achievement'}
+          src={finalImage ? `https://dhanamschool.com/files/${finalImage}` : 'https://via.placeholder.com/400x300/1a5f7a/ffffff?text=Achievement'}
           alt="Achievement"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
