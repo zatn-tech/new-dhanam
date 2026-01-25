@@ -12,6 +12,8 @@ const Navbar = () => {
       const headerHeight = location.pathname === '/' ? 180 : 0; // Increased header height to prevent overlay
       setIsScrolled(window.scrollY > headerHeight);
     };
+    // Check initial scroll position
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
@@ -81,8 +83,9 @@ const Navbar = () => {
                  />
                </div>
                <div className={`transition-all duration-500 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}>
-                 <h3 className="font-display font-semibold text-xs sm:text-sm md:text-base lg:text-lg text-primary leading-tight">Dhanam Pachaiyappan</h3>
-                 <p className="text-xs text-accent leading-tight">Matric Higher Secondary School</p>
+                 <h3 className="font-display font-semibold text-xs sm:text-sm md:text-base lg:text-lg text-primary leading-tight">DHANAM PACHAIYAPPAN</h3>
+                 <p className="text-xs text-primary leading-tight" style={{ textShadow: '0 0 3px rgba(255, 177, 22, 0.8), 0 0 5px rgba(255, 177, 22, 0.6), 1px 1px 2px rgba(255, 177, 22, 0.8)' }}>MATRICULATION HIGHER SECONDARY SCHOOL</p>
+                 <p className="text-xs text-primary leading-tight" style={{ textShadow: '0 0 3px rgba(255, 177, 22, 0.8), 0 0 5px rgba(255, 177, 22, 0.6), 1px 1px 2px rgba(255, 177, 22, 0.8)' }}>ASHOK NAGAR, ARAKKONAM - 631 001</p>
                </div>
              </div>
 
@@ -117,7 +120,11 @@ const Navbar = () => {
        </div>
 
                {/* Mobile Top Navigation Bar */}
-        <div className="md:hidden fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md shadow-large">
+        <div 
+          className={`md:hidden fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md shadow-large transition-all duration-500 ${
+            location.pathname === '/' && !isScrolled ? 'opacity-0 pointer-events-none translate-y-[-100%]' : 'opacity-100 translate-y-0'
+          }`}
+        >
           <div className="container-padding">
             <div className="flex items-center py-3">
               {/* Logo and School Name */}
@@ -130,8 +137,9 @@ const Navbar = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-sm text-primary leading-tight">Dhanam Pachaiyappan</h3>
-                  <p className="text-xs text-accent leading-tight">Matric Higher Secondary School</p>
+                  <h3 className="font-display font-semibold text-sm text-primary leading-tight">DHANAM PACHAIYAPPAN</h3>
+                  <p className="text-xs text-primary leading-tight" style={{ textShadow: '0 0 3px rgba(255, 177, 22, 0.8), 0 0 5px rgba(255, 177, 22, 0.6), 1px 1px 2px rgba(255, 177, 22, 0.8)' }}>MATRICULATION HIGHER SECONDARY SCHOOL</p>
+                  <p className="text-xs text-primary leading-tight" style={{ textShadow: '0 0 3px rgba(255, 177, 22, 0.8), 0 0 5px rgba(255, 177, 22, 0.6), 1px 1px 2px rgba(255, 177, 22, 0.8)' }}>ASHOK NAGAR, ARAKKONAM - 631 001</p>
                 </div>
               </div>
             </div>

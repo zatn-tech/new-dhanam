@@ -79,7 +79,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white/80 text-sm">
-                    +91 123 456 7890
+                    +91 91 7107 0909
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white/80 text-sm">
-                    info@dhanamschool.com
+                  dhanampachaiyappan12@gmail.com
                   </p>
                 </div>
               </div>
@@ -118,17 +118,32 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-secondary/20 py-6 pb-16 md:pb-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            <p className="text-white/60 text-xs sm:text-sm text-center md:text-left leading-relaxed max-w-md mx-auto md:mx-0">
-              © 2024 Dhanam Pachaiyappan Matric Higher Secondary School. All rights reserved.
-            </p>
-            <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6">
-              <Link to="/privacy-policy" className="text-white hover:text-secondary transition-colors duration-200 text-center md:text-left text-sm font-medium py-1 px-2 rounded hover:bg-white/10">
-                Privacy Policy
-              </Link>
-              <Link to="/terms-of-service" className="text-white hover:text-secondary transition-colors duration-200 text-center md:text-left text-sm font-medium py-1 px-2 rounded hover:bg-white/10">
-                Terms of Service
-              </Link>
+          <div className="flex flex-col space-y-6">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+              <p className="text-white/60 text-xs sm:text-sm text-center md:text-left leading-relaxed max-w-md mx-auto md:mx-0">
+                © 2024 Dhanam Pachaiyappan Matric Higher Secondary School. All rights reserved.
+              </p>
+              <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6">
+                <Link to="/privacy-policy" className="text-white hover:text-secondary transition-colors duration-200 text-center md:text-left text-sm font-medium py-1 px-2 rounded hover:bg-white/10">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms-of-service" className="text-white hover:text-secondary transition-colors duration-200 text-center md:text-left text-sm font-medium py-1 px-2 rounded hover:bg-white/10">
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-white/60 text-xs sm:text-sm text-center">
+                Designed and developed by{' '}
+                <a 
+                  href="https://wa.me/919790634524" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:text-secondary/80 transition-colors duration-200 font-medium underline"
+                >
+                  Zatn.
+                </a>
+              </p>
             </div>
           </div>
         </div>

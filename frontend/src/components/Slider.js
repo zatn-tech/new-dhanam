@@ -59,7 +59,7 @@ const Slider = ({ images, interval = 3000 }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-auto absolute top-1/2 left-0 -translate-y-1/2"
+              className="w-full h-full absolute top-1/2 left-0 -translate-y-1/2"
               style={{
                 maxHeight: '100%'
               }}

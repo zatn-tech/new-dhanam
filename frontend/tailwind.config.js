@@ -6,8 +6,8 @@ module.exports = withMT({
     colors:{
       'primary':'#06402b', // Dark green from logo outer ring
       'secondary':'#ffb116', // Yellow from logo inner circle
-      'accent':'#90EE90', // Light green from logo inner ring (replacing orange)
-      'light-green':'#90EE90', // Light green from logo inner ring
+      'accent':'#7CB342', // Light green from logo inner ring (replacing orange)
+      'light-green':'#7CB342', // Light green from logo inner ring
       'white': '#ffffff',
       'black':'#000000',
       'gray': {

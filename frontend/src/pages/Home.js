@@ -118,12 +118,12 @@ const Home = () => {
         {/* Announcement Bar */}
         <div className="bg-gradient-to-r from-primary via-primary/95 to-primary text-white py-3 overflow-hidden">
           <div className="container-padding">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex-1 flex items-center space-x-4 overflow-hidden">
-                <div className="animate-pulse bg-secondary/30 px-3 py-1 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap flex-shrink-0">
-                  🎓 ADMISSIONS OPEN 2026-2027
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+              <div className="flex-1 flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 overflow-hidden w-full sm:w-auto">
+                <div className="bg-secondary/30 px-3 py-1 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap flex-shrink-0 relative overflow-hidden w-full sm:w-auto text-center sm:text-left">
+                  <span className="shining-text">🎓 ADMISSIONS OPEN 2026-2027</span>
                 </div>
-                <div className="overflow-hidden flex-1">
+                <div className="overflow-hidden flex-1 w-full sm:w-auto hidden sm:block">
                   <div className="flex animate-scroll">
                     <span className="whitespace-nowrap text-xs sm:text-sm pr-8">
                       District First Rank 12th (2021-2022) - 589/600 • State Second Rank 12th (2022-2023) - 595/600 • Excellence in Education • Holistic Development • State-of-the-Art Facilities
@@ -134,9 +134,20 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <Link to="/contact" className="btn-outline text-white border-white hover:bg-white hover:text-primary text-sm whitespace-nowrap flex-shrink-0">
+              <Link to="/contact" className="btn-outline text-white border-white hover:bg-white hover:text-primary text-sm whitespace-nowrap flex-shrink-0 w-full sm:w-auto text-center">
                 Apply Now
               </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Join Us Section */}
+        <div className="bg-gradient-to-r from-secondary/10 via-primary/10 to-secondary/10 py-8 border-y border-primary/20">
+          <div className="container-padding">
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-primary">
+                Join us Today and Feel the Difference Tomorrow !! <span className="inline-block animate-bounce">🌟</span>
+              </h2>
             </div>
           </div>
         </div>
@@ -340,14 +351,16 @@ const Home = () => {
           <div className="container-padding text-center relative z-10">
             {/* Main CTA Text with Interactive Effects */}
             <div className="group mb-10">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-8 transform transition-all duration-500 group-hover:scale-105">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6 transform transition-all duration-500 group-hover:scale-105">
                 <span className="inline-block relative">
-                  <span className="relative z-10">Join Us Today and Feel the difference Tomorrow!!</span>
+                  <span className="relative z-10">Shape Your Future with Excellence</span>
                   {/* Glow effect */}
-                  <span className="absolute inset-0 text-white blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500">Join Us Today and Feel the difference Tomorrow!!</span>
+                  <span className="absolute inset-0 text-white blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500">Shape Your Future with Excellence</span>
                 </span>
-                <span className="inline-block ml-3 text-3xl md:text-4xl lg:text-5xl animate-bounce group-hover:animate-spin transition-transform duration-500">🌟</span>
               </h2>
+              <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Join Dhanam School and embark on a journey of academic excellence, holistic development, and lifelong success. Your child's bright future starts here.
+              </p>
               
               {/* Decorative elements */}
               <div className="flex items-center justify-center gap-4 mb-8">

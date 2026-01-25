@@ -23,13 +23,15 @@ const AchievementBox = ({ achievement, image, topic, content, marks }) => {
   return (
     <div className="card overflow-hidden group hover:shadow-large transition-all duration-300">
       {/* Image Section */}
-      <div className="relative overflow-hidden">
-        <img
-          className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-          src={finalImage ? `https://dhanamschool.com/files/${finalImage}` : 'https://via.placeholder.com/400x300/1a5f7a/ffffff?text=Achievement'}
-          alt="Achievement"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+      <div className="relative overflow-hidden bg-primary/5">
+        <div className="w-full">
+          <img
+            className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+            src={finalImage ? `https://dhanamschool.com/files/${finalImage}` : 'https://via.placeholder.com/400x300/1a5f7a/ffffff?text=Achievement'}
+            alt="Achievement"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent pointer-events-none" />
         <div className="absolute top-4 left-4">
           <span className="bg-secondary text-primary px-3 py-1 rounded-full text-sm font-medium">
             🏆 Achievement

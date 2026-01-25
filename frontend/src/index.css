@@ -94,7 +94,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-secondary to-secondary bg-clip-text text-transparent;
   }
 
   .glass-effect {
@@ -182,6 +182,54 @@
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  /* Shining effect animation */
+  .shining-text {
+    position: relative;
+    display: inline-block;
+    color: #FFB116;
+    font-weight: 700;
+    text-shadow: 
+      0 0 10px rgba(255, 177, 22, 0.8),
+      0 0 20px rgba(255, 177, 22, 0.6),
+      0 0 30px rgba(255, 177, 22, 0.4);
+    animation: shine-glow 2s ease-in-out infinite;
+  }
+
+  .shining-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: shine-sweep 2.5s ease-in-out infinite;
+  }
+
+  @keyframes shine-glow {
+    0%, 100% {
+      text-shadow: 
+        0 0 10px rgba(255, 177, 22, 0.8),
+        0 0 20px rgba(255, 177, 22, 0.6),
+        0 0 30px rgba(255, 177, 22, 0.4);
+    }
+    50% {
+      text-shadow: 
+        0 0 20px rgba(255, 177, 22, 1),
+        0 0 30px rgba(255, 177, 22, 0.8),
+        0 0 40px rgba(255, 177, 22, 0.6);
+    }
+  }
+
+  @keyframes shine-sweep {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
     }
   }
 }

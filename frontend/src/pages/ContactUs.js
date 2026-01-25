@@ -81,8 +81,7 @@ const ContactUs = () => {
       icon: "📞",
       title: "Call Us",
       details: [
-        "+91 123 456 7890",
-        "+91 987 654 3210",
+        "+91 91 7107 0909",
         "Mon - Fri: 8:00 AM - 4:00 PM"
       ]
     },
@@ -90,9 +89,7 @@ const ContactUs = () => {
       icon: "✉️",
       title: "Email Us",
       details: [
-        "info@dhanamschool.com",
-        "admissions@dhanamschool.com",
-        "support@dhanamschool.com"
+        "dhanampachaiyappan12@gmail.com"
       ]
     }
   ];
@@ -236,7 +233,7 @@ const ContactUs = () => {
       </section>
 
       {/* Contact Form and Map Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+      <section id="contact-form" className="section-padding bg-gradient-to-br from-gray-50 to-white scroll-mt-20">
         <div className="container-padding">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Contact Form */}
@@ -414,9 +411,17 @@ const ContactUs = () => {
               We're here to answer all your questions and help you get started with your child's educational journey
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact-form" className="btn-secondary bg-white text-secondary hover:bg-gray-100">
+              <button 
+                onClick={() => {
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="btn-secondary bg-white text-secondary hover:bg-gray-100"
+              >
                 Send Message
-              </a>
+              </button>
               <a href="/about" className="btn-outline border-white text-white hover:bg-white hover:text-secondary">
                 Learn More
               </a>

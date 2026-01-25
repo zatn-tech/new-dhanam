@@ -12,7 +12,7 @@ const Achievements = () => {
 
   useEffect(() => {
     AOS.init({
-      disable: "phone",
+      disable: false,
       duration: 1000,
       easing: "ease-out-cubic",
     });

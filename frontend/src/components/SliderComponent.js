@@ -7,9 +7,9 @@ const NextArrow = ({ onClick }) => (
   <button
     aria-label="Next"
     onClick={onClick}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-primary w-10 h-10 rounded-full shadow-medium flex items-center justify-center transition-colors"
+    className="hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-primary w-8 h-8 md:w-10 md:h-10 rounded-full shadow-medium items-center justify-center transition-colors"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 md:w-5 md:h-5">
       <path fillRule="evenodd" d="M8.47 3.97a.75.75 0 011.06 0l6.5 6.5a.75.75 0 010 1.06l-6.5 6.5a.75.75 0 11-1.06-1.06L14.94 12 8.47 5.53a.75.75 0 010-1.06z" clipRule="evenodd" />
     </svg>
   </button>
@@ -19,9 +19,9 @@ const PrevArrow = ({ onClick }) => (
   <button
     aria-label="Previous"
     onClick={onClick}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-primary w-10 h-10 rounded-full shadow-medium flex items-center justify-center transition-colors"
+    className="hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-primary w-8 h-8 md:w-10 md:h-10 rounded-full shadow-medium items-center justify-center transition-colors"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 md:w-5 md:h-5">
       <path fillRule="evenodd" d="M15.53 20.03a.75.75 0 01-1.06 0l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 111.06 1.06L9.06 12l6.47 6.47a.75.75 0 010 1.06z" clipRule="evenodd" />
     </svg>
   </button>
@@ -73,9 +73,9 @@ const SliderComponent = ({ slides = [] }) => {
                 }}
               />
 
-              <div className="relative grid lg:grid-cols-2 gap-8 items-center p-6 md:p-10">
+              <div className="relative grid lg:grid-cols-2 gap-6 md:gap-8 items-stretch lg:items-center p-4 md:p-6 lg:p-10">
                 {/* Content */}
-                <div className="order-2 lg:order-1 text-white">
+                <div className="order-2 lg:order-1 text-white flex flex-col justify-center">
                   <div className="inline-flex items-center bg-white/10 border border-white/20 text-white px-3 py-1 rounded-full text-xs font-medium mb-4 backdrop-blur-sm">
                     🏆 Achievement
                   </div>
@@ -88,12 +88,12 @@ const SliderComponent = ({ slides = [] }) => {
                 </div>
 
                 {/* Image */}
-                <div className="order-1 lg:order-2 flex justify-center">
-                  <div className="relative rounded-2xl overflow-hidden shadow-large w-full max-w-md">
+                <div className="order-1 lg:order-2 flex justify-center items-stretch w-full lg:w-auto">
+                  <div className="relative rounded-2xl overflow-hidden shadow-large w-full max-w-md h-[400px] md:h-[450px] lg:aspect-[4/3] lg:h-auto">
                     <img
                       src={`https://dhanamschool.com/files/${slide.file}`}
                       alt={slide.topic || 'Achievement'}
-                      className="w-full h-72 md:h-80 object-cover"
+                      className="w-full h-full object-cover"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
